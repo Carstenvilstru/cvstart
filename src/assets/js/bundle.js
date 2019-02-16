@@ -3,6 +3,6 @@ import './components/slider';
 
 let x = 0;
 
-$('body').click(() => {
+/* $('body').click(() => {
 	alert(true)
-})
+}) */

@@ -108,8 +108,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-@import "layout/content-sidebar";
+//@import "layout/content-sidebar";
 
 body {
 	background-color: lightgreen;
+}
+.container {
+	width: 1200px;
+    margin: auto;
 }

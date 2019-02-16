@@ -10,10 +10,11 @@
  */
 
 ?>
-
+		</div>		<!-- container -->
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+		<div class='container'>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cvstart' ) ); ?>">
 				<?php
@@ -27,6 +28,7 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'cvstart' ), 'cvstart', '<a href="http://bytub.com">Carsten Vilstrup</a>' );
 				?>
 		</div><!-- .site-info -->
+		</div>		<!-- container -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
