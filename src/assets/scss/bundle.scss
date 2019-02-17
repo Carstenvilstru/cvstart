@@ -111,15 +111,34 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 //@import "layout/content-sidebar";
 
 
-* 3rd party packages */
+/*--------------------------------------------------------------
+# BRAD SCHIFF BÖRJAR HÄR
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+	3rd party packages
+
+
+	SASS and Global'ish Stuff
+
+
+	BEM Blocks
+		@import "modules/page-banner";	1630
+
+--------------------------------------------------------------*/
+
+/* 3rd party packages */
 //@import "normalize.css";
 	/* slick-carousel/slick/slick */
 //@import "slick-carousel/slick/slick.css";
 
 /* SASS and Global'ish Stuff */
-//@import "base/variables";
-//@import "base/baseline";
-//@import "base/utility-classes";
+@import "bs-base/variables";
+@import "bs-base/baseline";
+@import "bs-base/utility-classes";
 
 /* BEM Blocks */
 //@import "modules/shame";
@@ -129,24 +148,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 //@import "modules/site-header";
 //@import "modules/site-footer";
 //@import "modules/main-navigation";
-//@import "modules/page-banner";
+/* BEM Blocks -- page-banner */
+	@import "bs-modules/page-banner";
 //@import "modules/hero-slider";
 //@import "modules/search-overlay";
 //@import "modules/professor-card";
 //@import "modules/headline";
-//@import "modules/generic-content";
+	@import "bs-modules/generic-content";
 //@import "modules/full-width-split";
 //@import "modules/event-summary";
 //@import "modules/page-links";
 //@import "modules/acf-map";
 //@import "modules/link-list";
-//@import "modules/metabox";
+	@import "bs-modules/metabox";
 //@import "modules/post-item";
 
 body {
 	background-color: lightgreen;
 }
-.container {
-	width: 1200px;
-    margin: auto;
-}
+
