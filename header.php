@@ -31,11 +31,16 @@
 				the_custom_logo();
 				if ( is_front_page() && is_home() ) :
 					?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php
+					<h1 class="school-logo-text float-left"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><strong>Fictional</strong> University</a></h1>
+					<span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+					<i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
+    			<?php
 				else :
 					?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<h1 class="school-logo-text float-left"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><strong>Fictional</strong> University</a></h1>
+					<span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+					<i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
+					
 					<?php
 				endif;
 				$cvstart_description = get_bloginfo( 'description', 'display' );
