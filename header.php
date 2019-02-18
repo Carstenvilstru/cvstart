@@ -24,6 +24,30 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cvstart' ); ?></a>
 
+	<header class="site-header">
+    <div class="container">
+      <h1 class="school-logo-text float-left"><a href="#"><strong>Fictional</strong> University</a></h1>
+      <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+      <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
+      <div class="site-header__menu group">
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Campuses</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__util">
+          <a href="#" class="btn btn--small btn--orange float-left push-right">Login</a>
+          <a href="#" class="btn btn--small  btn--dark-orange float-left">Sign Up</a>
+          <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
 	<header id="masthead" class="site-header">
 		<div class='container'>
 			<div class="site-branding">
@@ -31,25 +55,14 @@
 				the_custom_logo();
 				if ( is_front_page() && is_home() ) :
 					?>
-<<<<<<< HEAD
-				
-
 					<h1 class="school-logo-text float-left"><a href="<?php echo esc_url( home_url( 'home' ) ); ?>"><strong>Fictional</strong> University</a></h1>
-
-=======
-					<h1 class="school-logo-text float-left"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><strong>Fictional</strong> University</a></h1>
->>>>>>> 5726aade2523194c68f0e89b5fcf41f0b86e4fa4
 					<span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
 					<i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
     			<?php
 				else :
 					?>
-<<<<<<< HEAD
 					<h1 class="school-logo-text float-left"><a href="<?php echo esc_url( home_url( 'home' ) ); ?>"><strong>Fictional</strong> University</a></h1>
 
-=======
-					<h1 class="school-logo-text float-left"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><strong>Fictional</strong> University</a></h1>
->>>>>>> 5726aade2523194c68f0e89b5fcf41f0b86e4fa4
 					<span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
 					<i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
 					
@@ -72,13 +85,6 @@
 							<li><a href="#">Campuses</a></li>
 							<li><a href="#">Blog</a></li>
 						</ul>
-					
-					<!-- <?php
-					wp_nav_menu( array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					) );
-					?> -->
 				</nav><!-- #site-navigation -->
 				<div class="site-header__util">
           <a href="#" class="btn btn--small btn--orange float-left push-right">Login</a>
