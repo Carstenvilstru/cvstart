@@ -27,21 +27,15 @@
 	<header id="masthead" class="site-header">
 		<div class='container'>
 			<div class="site-branding">
-					<?php
+				<?php
 				the_custom_logo();
 				if ( is_front_page() && is_home() ) :
 					?>
-					<h1 class="school-logo-text float-left"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><strong>Fictional</strong> University</a></h1>
-					<span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
-					<i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
-					
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<?php
 				else :
 					?>
-					<h1 class="school-logo-text float-left"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><strong>Fictional</strong> University</a></h1>
-					<span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
-					<i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
-					
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 					<?php
 				endif;
 				$cvstart_description = get_bloginfo( 'description', 'display' );
@@ -50,29 +44,16 @@
 					<p class="site-description"><?php echo $cvstart_description; /* WPCS: xss ok. */ ?></p>
 				<?php endif; ?>
 			</div><!-- .site-branding -->
-			<div class="site-header__menu group">				
-				<nav id="site-navigation" class="main-navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cvstart' ); ?></button>
-					<!-- <?php
-					wp_nav_menu( array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					) );
-					?> -->
-					<ul>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Programs</a></li>
-						<li><a href="#">Events</a></li>
-						<li><a href="#">Campuses</a></li>
-						<li><a href="#">Blog</a></li>
-					</ul>
-				</nav><!-- #site-navigation -->
-				<div class="site-header__util">
-					<a href="#" class="btn btn--small btn--orange float-left push-right">Login</a>
-					<a href="#" class="btn btn--small  btn--dark-orange float-left">Sign Up</a>
-					<span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
-        		</div>	<!-- site-header__menu group -->
-			</div>	<!-- site-header__util -->
+
+			<nav id="site-navigation" class="main-navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cvstart' ); ?></button>
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				) );
+				?>
+			</nav><!-- #site-navigation -->
 		</div>		<!-- container -->
 	</header><!-- #masthead -->
 

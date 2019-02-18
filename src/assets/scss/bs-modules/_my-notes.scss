@@ -23,7 +23,7 @@
 }
 
 .edit-note, .delete-note {
-  @media (max-width: 635px) {
+  @media (min-width: 635px) {
     position: relative;
     top: -12px;
   }
