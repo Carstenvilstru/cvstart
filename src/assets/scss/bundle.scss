@@ -133,35 +133,35 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* 3rd party packages */
 //@import "normalize.css";
 	/* slick-carousel/slick/slick */
-//@import "slick-carousel/slick/slick.css";
+	@import "slick-carousel/slick/slick.css";
 
 /* SASS and Global'ish Stuff */
-@import "bs-base/variables";
-@import "bs-base/baseline";
-@import "bs-base/utility-classes";
+	@import "bs-base/variables";
+	@import "bs-base/baseline";
+	@import "bs-base/utility-classes";
 
 /* BEM Blocks */
-//@import "modules/shame";
-//@import "modules/login";
-//@import "modules/btn";
-//@import "modules/my-notes";
-//@import "modules/site-header";
-//@import "modules/site-footer";
-//@import "modules/main-navigation";
+	@import "bs-modules/shame";
+	@import "bs-modules/login";
+	@import "bs-modules/btn";
+	@import "bs-modules/my-notes";
+	@import "bs-modules/site-header";
+	@import "bs-modules/site-footer";
+	@import "bs-modules/main-navigation";
 /* BEM Blocks -- page-banner */
 	@import "bs-modules/page-banner";
-//@import "modules/hero-slider";
-//@import "modules/search-overlay";
-//@import "modules/professor-card";
-//@import "modules/headline";
+	@import "bs-modules/hero-slider";
+	@import "bs-modules/search-overlay";
+	@import "bs-modules/professor-card";
+	@import "bs-modules/headline";
 	@import "bs-modules/generic-content";
-//@import "modules/full-width-split";
-//@import "modules/event-summary";
-//@import "modules/page-links";
-//@import "modules/acf-map";
-//@import "modules/link-list";
+	@import "bs-modules/full-width-split";
+	@import "bs-modules/event-summary";
+	@import "bs-modules/page-links";
+	@import "bs-modules/acf-map";
+	@import "bs-modules/link-list";
 	@import "bs-modules/metabox";
-//@import "modules/post-item";
+	@import "bs-modules/post-item";
 
 body {
 	background-color: lightgreen;
