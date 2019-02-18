@@ -31,17 +31,25 @@
 				the_custom_logo();
 				if ( is_front_page() && is_home() ) :
 					?>
+<<<<<<< HEAD
 				
 
 					<h1 class="school-logo-text float-left"><a href="<?php echo esc_url( home_url( 'home' ) ); ?>"><strong>Fictional</strong> University</a></h1>
 
+=======
+					<h1 class="school-logo-text float-left"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><strong>Fictional</strong> University</a></h1>
+>>>>>>> 5726aade2523194c68f0e89b5fcf41f0b86e4fa4
 					<span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
 					<i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
     			<?php
 				else :
 					?>
+<<<<<<< HEAD
 					<h1 class="school-logo-text float-left"><a href="<?php echo esc_url( home_url( 'home' ) ); ?>"><strong>Fictional</strong> University</a></h1>
 
+=======
+					<h1 class="school-logo-text float-left"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><strong>Fictional</strong> University</a></h1>
+>>>>>>> 5726aade2523194c68f0e89b5fcf41f0b86e4fa4
 					<span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
 					<i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
 					
